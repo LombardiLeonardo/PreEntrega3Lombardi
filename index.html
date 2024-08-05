@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Seguros</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid bg-light-green vh-100 d-flex flex-column justify-content-center align-items-center">
+        <h1 class="display-4 mb-4">Simulador de Seguros</h1>
+        <div class="bg-white p-4 rounded shadow text-center">
+            <form id="simulador-form">
+                <div class="mb-3">
+                    <label for="marca" class="form-label">Marca</label>
+                    <select id="marca" class="form-select">
+                        <option value="Ford">Ford</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="VW">VW</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Volvo">Volvo</option>
+                        <option value="Scania">Scania</option>
+                        <option value="Mercedez Benz">Mercedez Benz</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="tipo" class="form-label">Tipo de Vehículo</label>
+                    <select id="tipo" class="form-select">
+                        <option value="auto">Auto</option>
+                        <option value="camioneta">Camioneta</option>
+                        <option value="tractor">Tractor</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="modelo" class="form-label">Modelo</label>
+                    <select id="modelo" class="form-select"></select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Simular</button>
+            </form>
+        </div>
+        <div id="resultado" class="mt-4 p-4 bg-white border border-dark" style="display: none;"></div>
+        <div id="cotizaciones" class="mt-4 p-4 bg-white border border-dark"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
